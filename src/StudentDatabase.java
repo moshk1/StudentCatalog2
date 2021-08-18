@@ -19,4 +19,9 @@ public class StudentDatabase {
         System.out.println("Student doesn't exist");
         return null;
     }
+
+    /*private ArrayList<String> courseList = new ArrayList<>();
+        courseList.add("Math");*/
+
+
  }

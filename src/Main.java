@@ -2,11 +2,16 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
 
-        //Counter for adding ID
+        // Counter for adding ID
         int idCounter = 1000;
+
+        // Tuition per course
+       /* int costOfCourse = 500;
+        int tuitionBalance = 0;*/
+
 
         Scanner in = new Scanner(System.in);
 
@@ -25,10 +30,10 @@ public class Main {
             System.out.println("Enter course(s): ");
             String courses = in.nextLine();
 
-            System.out.println("You have to pay: ");
-            int tuition = in.nextInt();
+            /*System.out.println("You have to pay: ");
+            int tuition = in.nextInt();*/
 
-            Student student = new Student.StudentBuilder(firstName, lastName).year(gradeYear).id(idCounter).classes(courses).payment(tuition).build();
+            Student student = new Student.StudentBuilder(firstName, lastName).year(gradeYear).id(idCounter).classes(courses).build();
             studentDatabase.addStudent(student);
 
             idCounter++;
@@ -36,7 +41,30 @@ public class Main {
         }
         System.out.println(studentDatabase.getNumberOfStudents());
         System.out.println(studentDatabase.getStudentById(1000));
+
     }
+   /* public void viewBalance() {
+        public void viewBalance() {
+            System.out.println("The tuition fee is: $" + tuitionBalance);
+    }
+
+    public void payTuition() {
+        viewBalance();
+        System.out.print("Enter payment: $");
+        Scanner in = new Scanner(System.in);
+        int payment = in.nextInt();
+        tuitionBalance = tuitionBalance - payment;
+        System.out.println("Thank you for the payment of $" + payment);
+
+    }*/
+    // show status
+    /*public String toString() {
+        return "Name: " + firstName + " " + lastName +
+            "\nGrade Level: " + gradeYear +
+            "\nStudent ID: " + studentId +
+            "\nCourses Enrolled: " + courses +
+            "\nOutstanding Balance: $" + tuitionBalance;
+    }*/
 
 }
 
