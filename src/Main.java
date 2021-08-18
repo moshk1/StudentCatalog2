@@ -15,12 +15,16 @@ public class Main {
         for (int i = 0; i < 2; i++) {
             System.out.println("First Name: ");
             String firstName = in.nextLine();
+
             System.out.println("Last Name: ");
             String lastName = in.nextLine();
+
             System.out.println("Grade: ");
             int gradeYear = in.nextInt();
+
             System.out.println("Enter course(s): ");
             String courses = in.nextLine();
+
             System.out.println("You have to pay: ");
             int tuition = in.nextInt();
 
