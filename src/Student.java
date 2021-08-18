@@ -1,11 +1,11 @@
 public class Student {
 
-    private final String firstName;
-    private final String lastName;
-    private final int gradeYear; // skal denne være final hvis den skal kunne endres hvert år?
-    private final int studentId;
-    private final String courses;
-    private final int tuition;
+    private  String firstName;
+    private  String lastName;
+    private  int gradeYear; // skal denne være final hvis den skal kunne endres hvert år?
+    private  int studentId;
+    private  String courses;
+    private  int tuition;
 
     private Student(StudentBuilder builder) {
         this.firstName = builder.firstName;
@@ -38,8 +38,8 @@ public class Student {
     }
 
     public static class StudentBuilder {
-        private final String firstName;
-        private final String lastName;
+        private String firstName;
+        private String lastName;
         private int gradeYear; // skal denne være final hvis den skal kunne endres hvert år?
         private int studentId;
         private String courses;
