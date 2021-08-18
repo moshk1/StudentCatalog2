@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        //Counter for å legge til ID
+        //Counter for adding ID
         int idCounter = 1000;
 
         Scanner in = new Scanner(System.in);
@@ -13,13 +13,13 @@ public class Main {
 
         StudentDatabase studentDatabase = new StudentDatabase();
         for (int i = 0; i < 2; i++) {
-            System.out.println("First Name: ");
+            System.out.println("Enter first Name: ");
             String firstName = in.nextLine();
 
-            System.out.println("Last Name: ");
+            System.out.println("Enter last Name: ");
             String lastName = in.nextLine();
 
-            System.out.println("Grade: ");
+            System.out.println("Enter Grade: ");
             int gradeYear = in.nextInt();
 
             System.out.println("Enter course(s): ");
@@ -40,6 +40,10 @@ public class Main {
 
 }
 
-// TODO sjekke tuition og courses
-// TODO Legge til payment funksjon
-// TODO vise status
+// TODO check the error on tuition and courses
+// TODO Add a cost per course and payment method (should also show the outstanding payment as well)
+// TODO Add show status method
+// TODO stud is redundant - check this
+// TODO Add a list of courses
+
+// TODO Move the studentBuilder to main?
