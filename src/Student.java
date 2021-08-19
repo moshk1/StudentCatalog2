@@ -4,7 +4,7 @@ public class Student {
     private  String lastName;
     private  int gradeYear;
     private  int studentId;
-    private  String courses;
+    public   String courses;
     private  int tuition;
 
     private Student(StudentBuilder builder) {
@@ -42,7 +42,7 @@ public class Student {
         private String lastName;
         private int gradeYear;
         private int studentId;
-        private String courses;
+        public  String courses;
         private int tuition;
 
         public StudentBuilder(String firstName, String lastName) {
