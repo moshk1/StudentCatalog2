@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class StudentDatabase {
 
-    private ArrayList<Student> students = new ArrayList<>();
+    private final ArrayList<Student> students = new ArrayList<>();
 
     public void addStudent(Student student) {
         students.add(student);
@@ -20,8 +20,7 @@ public class StudentDatabase {
         return null;
     }
 
-    /*private ArrayList<String> courseList = new ArrayList<>();
-        courseList.add("Math");*/
+
 
 
  }
