@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class StudentDatabase {
 
-    private ArrayList<Student> students = new ArrayList<>();
+    private final ArrayList<Student> students = new ArrayList<>();
 
     public void addStudent(Student student) {
         students.add(student);
@@ -19,4 +19,5 @@ public class StudentDatabase {
         System.out.println("Student doesn't exist");
         return null;
     }
+
  }

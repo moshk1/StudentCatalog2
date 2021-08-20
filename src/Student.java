@@ -2,9 +2,9 @@ public class Student {
 
     private  String firstName;
     private  String lastName;
-    private  int gradeYear; // skal denne være final hvis den skal kunne endres hvert år?
+    private  int gradeYear;
     private  int studentId;
-    private  String courses;
+    public   String courses;
     private  int tuition;
 
     private Student(StudentBuilder builder) {
@@ -40,9 +40,9 @@ public class Student {
     public static class StudentBuilder {
         private String firstName;
         private String lastName;
-        private int gradeYear; // skal denne være final hvis den skal kunne endres hvert år?
+        private int gradeYear;
         private int studentId;
-        private String courses;
+        public  String courses;
         private int tuition;
 
         public StudentBuilder(String firstName, String lastName) {
@@ -72,15 +72,5 @@ public class Student {
         }
 
     }
-
-
-
-
-
-
-
-
-
-
 
 }
