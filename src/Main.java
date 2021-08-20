@@ -39,14 +39,14 @@ public class Main {
 
         StudentDatabase studentDatabase = new StudentDatabase();
         for (int i = 0; i < 2; i++) {
-            /*System.out.println("Enter first Name: ");
+            System.out.println("Enter first Name: ");
             String firstName = in.nextLine();
 
             System.out.println("Enter last Name: ");
             String lastName = in.nextLine();
 
             System.out.println("Enter Grade: ");
-            int gradeYear = in.nextInt();*/
+            int gradeYear = in.nextInt();
 
             listOfCourses();
             System.out.println("Enter desired course (Q to quit): ");
@@ -55,8 +55,8 @@ public class Main {
             /*System.out.println("You have to pay: ");
             int tuition = in.nextInt();*/
 
-          /*Student stud = new Student.StudentBuilder(firstName, lastName).year(gradeYear).id(idCounter).classes(courses).build();
-          studentDatabase.addStudent(stud);*/
+          Student stud = new Student.StudentBuilder(firstName, lastName).year(gradeYear).id(idCounter).classes(courses).build();
+          studentDatabase.addStudent(stud);
 
           break;
           }
@@ -76,6 +76,7 @@ public class Main {
 
 // TODO Move the studentBuilder to main?
 
+// This under here is what I want to incorporate in my code somehow.
 
 /*  public void enroll(String courses) {
     do {
