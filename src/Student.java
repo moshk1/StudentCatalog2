@@ -67,8 +67,12 @@ public class Student {
         }
 
         public Student build() {
-            Student stud = new Student(this);
-            return stud;
+            Student student = new Student(this);
+            validateStudentData(student);
+            return student;
+        }
+        private boolean validateStudentData() {
+            return true;
         }
 
     }
