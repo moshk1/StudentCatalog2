@@ -68,12 +68,12 @@ public class Student {
 
         public Student build() {
             Student student = new Student(this);
-            validateStudentData(student);
+//            validateStudentData(student);
             return student;
         }
-        private boolean validateStudentData() {
+        /*private boolean validateStudentData() {
             return true;
-        }
+        }*/
 
     }
 
