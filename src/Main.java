@@ -25,6 +25,8 @@ public class Main {
     System.out.println("You can choose from these courses: ");
     courseList.forEach(System.out::println);
     System.out.println(" ");
+   /*  I want to build an ArrayList that iterates through each course and removes the one that is chosen
+     from the user.*/
 
   }
 
