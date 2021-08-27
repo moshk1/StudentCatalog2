@@ -4,31 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-  /*public Student buildStudent() {
-    validateStudentData();
-    return new Student(this);
-  } */
-  /*private boolean validateStudentData() {
-    return true;
-  }*/
 
-  // List of available courses
-  public static void listOfCourses() {
-
-    List<String> courseList = new ArrayList<>();
-    courseList.add("1. Math");
-    courseList.add("2. English");
-    courseList.add("3. Science 101");
-    courseList.add("4. History");
-    courseList.add("5. Spanish");
-
-    System.out.println("You can choose from these courses: ");
-    courseList.forEach(System.out::println);
-    System.out.println(" ");
-   /*  I want to build an ArrayList that iterates through each course and removes the one that is chosen
-     from the user.*/
-
-  }
 
 
   public static void main(String[] args) {
@@ -50,7 +26,7 @@ public class Main {
             System.out.println("Enter Grade: ");
             int gradeYear = in.nextInt();
 
-            listOfCourses();
+            Courses.listOfCourses();
             System.out.println("Enter desired course (Q to quit): ");
             String courses = in.nextLine();
 
