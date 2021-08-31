@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// logic for seeing how much you have to pay
+
 public class Tuition {
     private int tuitionBalance = 0;
     private static int costOfCourse = 400;

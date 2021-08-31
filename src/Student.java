@@ -3,7 +3,7 @@ public class Student {
     private  String firstName;
     private  String lastName;
     private  int gradeYear;
-    private  int studentId;
+    private final int studentId;
     private  String courses;
     private  int tuition;
 
@@ -16,10 +16,10 @@ public class Student {
         this.tuition = builder.tuition;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String setFirstName(String firstName) {
+        this.firstName = firstName;
     }
-    public String getLastName() {
+    public String setLastName() {
         return lastName;
     }
     public int getGradeYear() {

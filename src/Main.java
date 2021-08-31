@@ -26,7 +26,7 @@ public class Main {
             System.out.println("Enter Grade: ");
             int gradeYear = in.nextInt();
 
-          //  System.out.println("List of available courses: " + courses);
+         //   System.out.println("List of available courses: " + courses);
             System.out.println("Enter course(s) to be enrolled: ");
             String courses = in.nextLine();
 
