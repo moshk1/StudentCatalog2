@@ -1,32 +1,34 @@
 import java.util.ArrayList;
-import java.util.List;
+
+// List of courses that can be chosen for enrollment.
 
 public class Courses {
 
+  private final ArrayList<String> courseList;
 
-  // List of available courses
-  public static void listOfCourses() {
+  public Courses() {
+    courseList = new ArrayList<>();
+  }
 
-    List<String> courseList = new ArrayList<>();
-    courseList.add("1. Math");
-    courseList.add("2. English");
-    courseList.add("3. Science 101");
-    courseList.add("4. History");
-    courseList.add("5. Spanish");
-
-    System.out.println("You can choose from these courses: ");
-    courseList.forEach(System.out::println);
-    System.out.println(" ");
-
-    List<String> toRemove = new ArrayList<>();
-    for (String remove : courseList) {
-      toRemove.add("Math");
-      toRemove.add("English");
+  public void addCourse(String course) {
+    if (this.courseList.contains(course)) {
+      System.out.println("Course already exist");
+    } else {
+      courseList.add(course);
     }
-    courseList.removeAll(toRemove);
+  }
 
-   /*  I want to build an ArrayList that iterates through each course and removes the one that is chosen
-     from the user.*/
-
+  public void deleteCourse(String course) {
+    if(this.courseList.contains(course)) {
+      for(int i = 0; i < this.courseList.size(); i++) {
+        if(this.courseList.get(i).equals(course)) {
+          this.courseList.remove(i);
+        }
+      }
+    } else {
+      System.out.println("Course doesn't exist");
+    }
   }
 }
+
+

@@ -16,7 +16,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         StudentDatabase studentDatabase = new StudentDatabase();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 1; i++) {
             System.out.println("Enter first Name: ");
             String firstName = in.nextLine();
 
@@ -26,17 +26,31 @@ public class Main {
             System.out.println("Enter Grade: ");
             int gradeYear = in.nextInt();
 
-            Courses.listOfCourses();
-            System.out.println("Enter desired course (Q to quit): ");
+          //  System.out.println("List of available courses: " + courses);
+            System.out.println("Enter course(s) to be enrolled: ");
             String courses = in.nextLine();
 
-            /*System.out.println("You have to pay: ");
-            int tuition = in.nextInt();*/
+           // viewBalance();
 
-          Student stud = new Student.StudentBuilder(firstName, lastName).year(gradeYear).id(idCounter).classes(courses).build();
-          studentDatabase.addStudent(stud);
 
-          break;
+         Student stud = new Student.StudentBuilder("Anders", "Morken")
+                  .year(2021)
+                  .id(10458)
+                  .classes("Math")
+                  .payment(500)
+                  .build();
+
+          Student stud1 = new Student.StudentBuilder("Vebjørn", "Fjeldberg")
+                  .year(2021)
+                  .id(10459)
+                  .classes("English")
+                  .payment(250)
+                  .build();
+         // studentDatabase.addStudent(stud);
+
+
+            System.out.println(stud);
+            System.out.println(stud1);
           }
 
 //          System.out.println(studentDatabase.getNumberOfStudents());
@@ -70,20 +84,7 @@ public class Main {
   }*/
 
 
-/* public void viewBalance() {
-        public void viewBalance() {
-            System.out.println("The tuition fee is: $" + tuitionBalance);
-    }
 
-    public void payTuition() {
-        viewBalance();
-        System.out.print("Enter payment: $");
-        Scanner in = new Scanner(System.in);
-        int payment = in.nextInt();
-        tuitionBalance = tuitionBalance - payment;
-        System.out.println("Thank you for the payment of $" + payment);
-
-    }*/
 // show status
     /*public String toString() {
         return "Name: " + firstName + " " + lastName +
