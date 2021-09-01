@@ -2,26 +2,26 @@ import java.util.ArrayList;
 
 // List of courses that can be chosen for enrollment.
 
-public class Courses {
+public class Course {
 
   private final ArrayList<String> courseList;
 
-  public Courses() {
+  public Course() {
     courseList = new ArrayList<>();
   }
 
-  public void addCourse(String course) {
-    if (this.courseList.contains(course)) {
+  public void addCourse(String courses) {
+    if (this.courseList.contains(courses)) {
       System.out.println("Course already exist");
     } else {
-      courseList.add(course);
+      courseList.add(courses);
     }
   }
 
-  public void deleteCourse(String course) {
-    if(this.courseList.contains(course)) {
+  public void deleteCourse(String courses) {
+    if(this.courseList.contains(courses)) {
       for(int i = 0; i < this.courseList.size(); i++) {
-        if(this.courseList.get(i).equals(course)) {
+        if(this.courseList.get(i).equals(courses)) {
           this.courseList.remove(i);
         }
       }
