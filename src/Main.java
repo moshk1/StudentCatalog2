@@ -9,10 +9,6 @@ public class Main {
 
   public static void main(String[] args) {
 
-        // Counter for adding ID
-        int idCounter = 1000;
-        idCounter++;
-
         Scanner in = new Scanner(System.in);
 
         StudentDatabase studentDatabase = new StudentDatabase();
@@ -33,14 +29,14 @@ public class Main {
            // viewBalance();
 
 
-         Student stud = new Student.StudentBuilder("Anders", "Morken")
+         Student stud = new Student.Builder("Anders", "Morken")
                   .year(2021)
                   .id(10458)
                   .classes("Math")
                   .payment(500)
                   .build();
 
-          Student stud1 = new Student.StudentBuilder("Vebjørn", "Fjeldberg")
+          Student stud1 = new Student.Builder("Vebjørn", "Fjeldberg")
                   .year(2021)
                   .id(10459)
                   .classes("English")

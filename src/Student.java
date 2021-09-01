@@ -1,80 +1,58 @@
+import lombok.Builder;
+
+@Builder
 public class Student {
 
-    private  String firstName;
-    private  String lastName;
-    private  int gradeYear;
-    private final int studentId;
-    private  String courses;
-    private  int tuition;
-
-    private Student(StudentBuilder builder) {
-        this.firstName = builder.firstName;
-        this.lastName = builder.lastName;
-        this.gradeYear = builder.gradeYear;
-        this.studentId = builder.studentId;
-        this.courses = builder.courses;
-        this.tuition = builder.tuition;
-    }
-
-    public String setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-    public String setLastName() {
-        return lastName;
-    }
-    public int getGradeYear() {
-        return gradeYear;
-    }
-    public int getStudentId() {
-        return studentId;
-    }
-    public int getTuition() {
-        return tuition;
-    }
-
-    @Override
-    public String toString() {
-        return "Student: "+this.firstName+" "+this.lastName+", Gradeyear: "+this.gradeYear+", StudentId: "+this.studentId+", Enrolled courses: "+this.courses+", Tuition: "+this.tuition;
-    }
-
-    public static class StudentBuilder {
+    public static class Builder {
         private String firstName;
         private String lastName;
-        private int gradeYear;
+        private int age;
         private int studentId;
-        private String courses;
+        private String subjects;
         private int tuition;
 
-        public StudentBuilder(String firstName, String lastName) {
+        private Builder firstName(String firstName) {
             this.firstName = firstName;
+            return this;
+        }
+
+        private Builder lastName(String lastName) {
             this.lastName = lastName;
-        }
-        public StudentBuilder year(int gradeYear) {
-            this.gradeYear = gradeYear;
             return this;
         }
-        public StudentBuilder id(int studentId) {
+
+        private Builder age(int age) {
+            this.age = age;
+            return this;
+        }
+
+        private Builder studentId(int studentId) {
             this.studentId = studentId;
+        }
+
+        private Builder subjects(String subjects) {
+            this.subjects = subjects;
             return this;
         }
-        public StudentBuilder classes(String courses) {
-            this.courses = courses;
-            return this;
-        }
-        public StudentBuilder payment(int tuition) {
-            this.tuition = tuition;
+
+        private Builder tuition(int tuition) {
+            this.tuition = this.tuition;
             return this;
         }
 
         public Student build() {
-            Student student = new Student(this);
-//            validateStudentData(student);
-            return student;
+            return new Student(this);
         }
-        /*private boolean validateStudentData() {
-            return true;
-        }*/
+
+        private void Student(Builder builder) {
+            firstName = builder.firstName;
+            lastName = builder.lastName;
+            age = builder.age;
+            studentId = builder.studentId;
+            subjects = builder.subjects;
+            this.tuition = builder.tuition;
+        }
+
 
     }
-
 }
