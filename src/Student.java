@@ -24,30 +24,6 @@ public class Student {
         this.tuition = builder.tuition;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public int getStudentId() {
-        return studentId;
-    }
-
-    public String getSubjects() {
-        return subjects;
-    }
-
-    public int getTuition() {
-        return tuition;
-    }
-
     @Override
     public String toString() {
         return "Name: " + firstName + ", Age: " + age + ", StudentID: " + studentId + ", Courses: " + subjects + ", Tuition: " + tuition;
