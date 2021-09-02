@@ -26,27 +26,29 @@ public class Main {
             System.out.println("Enter course(s) to be enrolled: ");
             String courses = in.nextLine();
 
-           // viewBalance();
 
 
-         Student stud = new Student.Builder("Anders", "Morken")
-                  .year(2021)
+
+
+
+         Student stud = new Student.Builder("Anders Morken")
+                  .age(34)
                   .id(10458)
-                  .classes("Math")
-                  .payment(500)
+                  .subjects("Math")
+                  .tuition(500)
                   .build();
 
-          Student stud1 = new Student.Builder("Vebjørn", "Fjeldberg")
-                  .year(2021)
+          Student stud1 = new Student.Builder("Vebjørn Fjeldberg")
+                  .age(25)
                   .id(10459)
-                  .classes("English")
-                  .payment(250)
+                  .subjects("English")
+                  .tuition(250)
                   .build();
-         // studentDatabase.addStudent(stud);
+          studentDatabase.addStudent(stud);
 
 
-            System.out.println(stud);
-            System.out.println(stud1);
+            /*System.out.println(stud);
+            System.out.println(stud1);*/
           }
 
 //          System.out.println(studentDatabase.getNumberOfStudents());

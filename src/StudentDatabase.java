@@ -12,7 +12,7 @@ public class StudentDatabase {
     }
     public Student getStudentById(int studentId) {
         for (Student student : students) {
-            if (student.getStudentId() == studentId) {
+            if (student.StudentId() == studentId) {
                 return student;
             }
         }
