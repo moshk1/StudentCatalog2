@@ -31,14 +31,14 @@ public class Main {
 
 
 
-         Student stud = new Student.Builder("Anders Morken")
+         Student stud = new Student.Builder("Anders", "Morken")
                   .age(34)
                   .id(10458)
                   .subjects("Math")
                   .tuition(500)
                   .build();
 
-          Student stud1 = new Student.Builder("Vebjørn Fjeldberg")
+          Student stud1 = new Student.Builder("Vebjørn", "Fjeldberg")
                   .age(25)
                   .id(10459)
                   .subjects("English")
@@ -47,8 +47,8 @@ public class Main {
           studentDatabase.addStudent(stud);
 
 
-            /*System.out.println(stud);
-            System.out.println(stud1);*/
+            System.out.println(stud);
+            System.out.println(stud1);
           }
 
 //          System.out.println(studentDatabase.getNumberOfStudents());

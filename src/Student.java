@@ -1,22 +1,69 @@
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
-@Builder
+import java.lang.String;
+
+import javax.swing.plaf.synth.SynthTreeUI;
+
+@Builder @NoArgsConstructor @AllArgsConstructor
 public class Student {
-    private final String name;
-    private final int age;
-    private final int studentId;
-    private final String subjects;
-    private final int tuition;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private int studentId;
+    private String subjects;
+    private int tuition;
+
+    public Student(Builder builder) {
+        this.firstName = builder.firstName;
+        this.lastName = builder.lastName;
+        this.age = builder.age;
+        this.studentId = builder.studentId;
+        this.subjects = builder.subjects;
+        this.tuition = builder.tuition;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public String getSubjects() {
+        return subjects;
+    }
+
+    public int getTuition() {
+        return tuition;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + firstName + ", Age: " + age + ", StudentID: " + studentId + ", Courses: " + subjects + ", Tuition: " + tuition;
+    }
 
     public static class Builder {
-        private String name;
+        private String firstName;
+        private String lastName;
         private int age;
         private int studentId;
         private String subjects;
         private int tuition;
 
-        public Builder(String name) {
-            this.name = name;
+        public Builder(String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
         }
 
         public Builder age(int age) {
@@ -35,7 +82,7 @@ public class Student {
         }
 
         public Builder tuition(int tuition) {
-            this.tuition = this.tuition;
+            this.tuition = tuition;
             return this;
         }
 
@@ -44,18 +91,4 @@ public class Student {
         }
 
     }
-
-    private void Student(Builder builder) {
-        this.name = builder.name;
-        this.age = builder.age;
-        this.studentId = builder.studentId;
-        this.subjects = builder.subjects;
-        this.tuition = builder.tuition;
-
-    }
-    @Override
-    public String toString() {
-        return "Name: " + this.name + ", Age:" + age + ", StudentID:" + studentId + ", Courses:" + subjects + ", Tuition:" + tuition;
-    }
-
 }

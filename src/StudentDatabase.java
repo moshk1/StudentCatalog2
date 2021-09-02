@@ -10,7 +10,7 @@ public class StudentDatabase {
     public int getNumberOfStudents() {
         return students.size();
     }
-    public Student getStudentById(int studentId) {
+    /*public Student getStudentById(int studentId) {
         for (Student student : students) {
             if (student.StudentId() == studentId) {
                 return student;
@@ -18,6 +18,6 @@ public class StudentDatabase {
         }
         System.out.println("Student doesn't exist");
         return null;
-    }
+    }*/
 
  }
