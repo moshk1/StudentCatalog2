@@ -4,8 +4,6 @@ import lombok.NoArgsConstructor;
 
 import java.lang.String;
 
-import javax.swing.plaf.synth.SynthTreeUI;
-
 @Builder @NoArgsConstructor @AllArgsConstructor
 public class Student {
     private String firstName;

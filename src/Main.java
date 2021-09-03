@@ -59,13 +59,10 @@ public class Main {
 
     }
 
-// TODO check the error on tuition and courses
 // TODO Add a cost per course and payment method (should also show the outstanding payment as well)
 // TODO Add show status method
-// TODO stud is redundant - check this
-// TODO Add a list of courses
+// TODO Add a list of courses that iterates through all courses and removing selected course(s)
 
-// TODO Move the studentBuilder to main?
 
 // This under here is what I want to incorporate in my code somehow.
 
