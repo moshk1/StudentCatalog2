@@ -7,32 +7,32 @@ public class Main {
 
   public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
+    Scanner in = new Scanner(System.in);
 
-        StudentDatabase studentDatabase = new StudentDatabase();
-        for (int i = 0; i < 1; i++) {
-            System.out.println("Enter first Name: ");
-            String firstName = in.nextLine();
+    StudentDatabase studentDatabase = new StudentDatabase();
+    for (int i = 0; i < 1; i++) {
+      System.out.println("Enter first Name: ");
+      String firstName = in.nextLine();
 
-            System.out.println("Enter last Name: ");
-            String lastName = in.nextLine();
+      System.out.println("Enter last Name: ");
+      String lastName = in.nextLine();
 
-            System.out.println("Enter Grade: ");
-            int gradeYear = in.nextInt();
-
-//            System.out.println("List of available courses: " + );
-            System.out.println("Enter course(s) to be enrolled: ");
-            String courses = in.nextLine();
-
-          System.out.println(courses);
+      System.out.println("Enter Grade: ");
+      int gradeYear = in.nextInt();
 
 
 
 
+      /*Tuition balance = new Tuition();
+      balance.setBalance(800);
+      System.out.println("The tuition fee is: $" + balance);*/
 
 
 
-         Student stud = new Student.Builder("Anders", "Morken")
+
+
+
+     /*    Student stud = new Student.Builder("Anders", "Morken")
                   .age(34)
                   .id(10458)
                   .subjects("Math")
@@ -50,14 +50,16 @@ public class Main {
 
             System.out.println(stud);
             System.out.println(stud1);
-          }
+          }*/
 
 //          System.out.println(studentDatabase.getNumberOfStudents());
 //          System.out.println(studentDatabase.getStudentById(1000));
 
-        }
-
     }
+
+  }
+
+}
 
 // TODO Add a cost per course and payment method (should also show the outstanding payment as well)
 // TODO Add show status method
