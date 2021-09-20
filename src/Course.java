@@ -1,17 +1,18 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 // List of courses that can be chosen for enrollment.
-// TODO Make sure the input method takes capped and non-capped letters
+
 
 
 public class Course {
 
   public void Course() {
-    ArrayList<String> courses = new ArrayList<>();
-    courses.add("Math");
-    courses.add("Science");
-    courses.add("History");
+    private ArrayList<String> courses = new ArrayList<>();
+    courses.add("math");
+    courses.add("science");
+    courses.add("history");
     courses.add("English");
     courses.add("Italian");
     courses.add("Spanish");
@@ -27,12 +28,13 @@ public class Course {
     Scanner scanner = new Scanner(System.in);
 
     System.out.print("Choose subjects: ");
-    String input = scanner.nextLine();
-    courses.remove(input);
+    String input = scanner.nextLine().toLowerCase();
+    String[] array = input.split(", ");
+    courses.removeAll(Arrays.asList(array));
 
     System.out.println("Available courses to enroll: ");
     for (String subject : courses) {
-      System.out.print(subject + " ");
+      System.out.println(subject + " ");
     }
     scanner.close();
   }
@@ -70,7 +72,9 @@ public class Course {
     } else {
       System.out.println("Course doesn't exist");
     }
-  }*/
+  }
 
+
+  */
 
 

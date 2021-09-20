@@ -24,7 +24,7 @@ public class Main {
       subjects.Course();
 
 
-      Tuition balance = new Tuition();
+     // Tuition balance = new Tuition();
 
 
 
