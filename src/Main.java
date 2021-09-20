@@ -20,12 +20,12 @@ public class Main {
       System.out.println("Enter Grade: ");
       int gradeYear = in.nextInt();
 
+      Course subjects = new Course();
+      subjects.Course();
 
 
+      Tuition balance = new Tuition();
 
-      /*Tuition balance = new Tuition();
-      balance.setBalance(800);
-      System.out.println("The tuition fee is: $" + balance);*/
 
 
 
@@ -67,21 +67,6 @@ public class Main {
 
 
 // This under here is what I want to incorporate in my code somehow.
-
-/*  public void enroll(String courses) {
-    do {
-      System.out.println("Enter desired course (Q to quit): ");
-
-      String course = courses;
-      if (!course.equals("Q")) {
-        courses = courses + "\n " + course;
-      } else {
-      }
-    } while (true);
-
-  }*/
-
-
 
 // show status
     /*public String toString() {

@@ -2,37 +2,42 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 // List of courses that can be chosen for enrollment.
+// TODO Make sure the input method takes capped and non-capped letters
 
 
 public class Course {
 
-  ArrayList<String> courses = new ArrayList<>();
-      courses.add("Math");
-      courses.add("Science");
-      courses.add("History");
-      courses.add("English");
-      courses.add("Italian");
-      courses.add("Spanish");
-      courses.add("Computer Science");
-      courses.add("Marketing");
+  public void Course() {
+    ArrayList<String> courses = new ArrayList<>();
+    courses.add("Math");
+    courses.add("Science");
+    courses.add("History");
+    courses.add("English");
+    courses.add("Italian");
+    courses.add("Spanish");
+    courses.add("Computer Science");
+    courses.add("Marketing");
 
-      System.out.println("Available courses to enroll: " );
-      for (String subject : courses) {
-    System.out.println(subject + " ");
+    System.out.println("Available courses to enroll: ");
+    for (String subject : courses) {
+      System.out.println(subject + " ");
+    }
+
+    System.out.println();
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Choose subjects: ");
+    String input = scanner.nextLine();
+    courses.remove(input);
+
+    System.out.println("Available courses to enroll: ");
+    for (String subject : courses) {
+      System.out.print(subject + " ");
+    }
+    scanner.close();
   }
-      System.out.println();
-  Scanner scanner = new Scanner(System.in);
-      System.out.print("Choose subjects: ");
-  String input = scanner.nextLine();
-      courses.remove(input);
 
-      System.out.println("Available courses to enroll: ");
-      for (String subject : courses) {
-    System.out.print(subject + " ");
-  }
-      scanner.close();
-
-
+}
 
 
 
@@ -66,6 +71,6 @@ public class Course {
       System.out.println("Course doesn't exist");
     }
   }*/
-}
+
 
 

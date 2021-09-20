@@ -1,7 +1,9 @@
 import lombok.Getter;
 import lombok.Setter;
 
-// logic for seeing how much you have to pay
+// logic for seeing how much you have to pay and show balance
+// How should this class work. Getters and setters to set cost and balance?
+
 @Getter @Setter
 public class Tuition {
     private int tuitionBalance = 0;
