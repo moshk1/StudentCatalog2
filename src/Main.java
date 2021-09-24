@@ -20,8 +20,6 @@ public class Main {
       System.out.println("Enter Grade: ");
       int gradeYear = in.nextInt();
 
-      Course subjects = new Course();
-      subjects.Course();
 
 
      // Tuition balance = new Tuition();
@@ -76,3 +74,27 @@ public class Main {
             "\nCourses Enrolled: " + courses +
             "\nOutstanding Balance: $" + tuitionBalance;
     }*/
+
+// Input for courses
+/*
+ System.out.println("Available courses to enroll: ");
+         for (String subject : courses) {
+         System.out.println(subject + " ");
+         }
+
+         System.out.println();
+         Scanner scanner = new Scanner(System.in);
+
+         System.out.print("Choose subjects: ");
+         String input = scanner.nextLine().toLowerCase();
+         String[] array = input.split(", ");
+         courses.removeAll(Arrays.asList(array));
+
+         System.out.println("Available courses to enroll: ");
+         for (String subject : courses) {
+         System.out.println(subject + " ");
+         }
+         scanner.close();
+         }
+
+         } */

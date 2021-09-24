@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 // This class should hold the logic for the registration and storing of students.
-// New input of students and should contain a list that the user can iterate through
+// New input of students and should contain a list that the user can iterate through (Have to separate the class for input method)
 
 public class StudentDatabase {
 
