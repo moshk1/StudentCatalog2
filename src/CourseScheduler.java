@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 
 // Class that contains list of courses to choose from
+// Logic for the course scheduler
 
-public class UniversityCourses {
+public class CourseScheduler {
 
     private final ArrayList<String> courseList;
 
-    public UniversityCourses() {
+    public CourseScheduler() {
         courseList = new ArrayList<>();
     }
 

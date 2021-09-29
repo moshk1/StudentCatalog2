@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-
 // contains structured data for courses
+// Add setters/getter here
 
 public class Course {
    String courseName;
@@ -16,18 +14,6 @@ public class Course {
        courseCostOfCourse = cost;
        
      }
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
